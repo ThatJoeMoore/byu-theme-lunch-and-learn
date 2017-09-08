@@ -33,6 +33,35 @@
     <!--[if lt IE 9]>
         <script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
         <![endif]-->
+    <style type="text/css">
+        #header,
+        #footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            transition: opacity 0.5s ease-in;
+            opacity: 1.0;
+            will-change: opacity;
+        }
+
+        #header.hide,
+        #footer.hide {
+            opacity: 0;
+        }
+
+        #header {
+            top: 0;
+        }
+
+        #footer {
+            bottom: 0;
+        }
+
+        .reveal .slides {
+            top: 90px!important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -88,7 +117,9 @@
             controls: true,
             progress: true,
             history: true,
-            center: true,
+            center: false,
+            // height: 875,
+            // width: 1200,
 
             transition: 'slide', // none/fade/slide/convex/concave/zoom
 
@@ -106,21 +137,6 @@
     </script>
 
     <template id="header-footer">
-        <style type="text/css">
-            #header {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-            }
-
-            #footer {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
-        </style>
         <byu-header id="header">
             <span slot="site-title">New Web Theme</span>
         </byu-header>
@@ -149,6 +165,73 @@
             }
         })();
     </script>
+    <script src="js/handle-slide-transitions.js"></script>
+
+    <template id="theme-part-nav">
+        <byu-menu slot="nav">
+            <a href="#">Link 1</a>
+            <a href="#">Here's a longer link</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <a href="#">Hey, this one overflowed!</a>
+            <a href="#">As did this!</a>
+            <a href="#">Too many links!</a>
+        </byu-menu>
+    </template>
+    <template id="theme-part-site-footer">
+        <byu-footer-column>
+            <span slot="header">Contact</span>
+            <p>
+                BYU Speeches
+                <br> 701 East University Parkway
+                <br> Provo, Utah 84602
+                <br> 888-888-8888
+            </p>
+            <byu-footer-action-button>
+                <a href="https://www.google.com" slot="actiontext">GIVE to Speeches</a>
+            </byu-footer-action-button>
+        </byu-footer-column>
+        <byu-footer-column>
+            <span slot="header">Affiliated Speeches</span>
+            <a href="https://www.byui.edu">BYU-Idaho Speeches</a>
+            <a href="https://www.byuh.edu">BYU-Hawaii Speeches</a>
+            <a href="https://womensconference.byu.edu">Women's Conference</a>
+            <a href="https://kennedy.byu.edu/lectures">Kennedy Center Lectures</a>
+            <a href="https://wheatley.byu.edu/">Wheatley Institution</a>
+        </byu-footer-column>
+        <byu-footer-column>
+            <span slot="header">Related Links</span>
+            <a>LDS.org</a>
+            <a>BYU Alumni</a>
+            <a>BYU Today</a>
+            <a>BYU Magazine</a>
+        </byu-footer-column>
+        <byu-footer-column>
+            <span slot="header">Connect With Us</span>
+            <a>Feedback</a>
+            <a>Help</a>
+            <a>Follow BYU Speeches</a>
+            <byu-social-media-links>
+                <!--Note: These all have text that will be hidden. The text should be there to help screen readers.-->
+                <a class="facebook" href="https://www.facebook.com">Facebook</a>
+                <a class="instagram" href="https://www.instagram.com">Instagram</a>
+                <a class="twitter" href="https://www.twitter.com">Twitter</a>
+                <a class="gplus" href="https://plus.google.com">Google Plus</a>
+                <a class="linkedin" href="https://www.linkedin.com">Linkedin</a>
+                <a class="youtube" href="https://www.youtube.com">YouTube</a>
+            </byu-social-media-links>
+            <a>Subscribe</a>
+        </byu-footer-column>
+    </template>
+    <template id="theme-part-user">
+        <byu-user-info slot="user">
+        </byu-user-info>
+    </template>
+    <template id="theme-part-search">
+        <byu-search slot="search"></byu-search>
+    </template>
+
 </body>
 
 </html>

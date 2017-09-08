@@ -1,10 +1,19 @@
 
 # New Web Theme
 
-From the terminal, pop in:
+What is it, why it is, and how to use it.
 
-  ```yo reveal:slide "Slide Title"```
+---
 
-Available options:
+#### Follow along:
 
- ```--markdown --attributes --notes```
+byu-theme-lunch.thatjoemoore.com
+
+#### Slides:
+
+thatjoemoore.github.io/byu-theme-lunch-and-learn
+
+note:
+* Welcome!
+* Whoami
+* We're actually going to start with some history, THEN why, then what.
