@@ -62,13 +62,6 @@ module.exports = (grunt) ->
 
             all: ['Gruntfile.coffee']
 
-        jshint:
-
-            options:
-                jshintrc: '.jshintrc'
-
-            all: ['js/*.js']
-
         copy:
 
             dist:
@@ -81,7 +74,7 @@ module.exports = (grunt) ->
                         'css/*.css'
                         'resources/**'
                     ]
-                    dest: 'dist/'
+                    dest: 'docs/'
                 },{
                     expand: true
                     src: ['index.html']
@@ -114,7 +107,6 @@ module.exports = (grunt) ->
     grunt.registerTask 'test',
         '*Lint* javascript and coffee files.', [
             'coffeelint'
-            'jshint'
         ]
 
     grunt.registerTask 'serve',

@@ -1,0 +1,131 @@
+[
+    "index.md",
+    [
+        "where-we-ve-been.md",
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/old-theme.png",
+                "data-background-size": "contain"
+            }
+        }
+    ],
+    [
+        "why.md",
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/other-schools/jh-home.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/other-schools/jh-admissions.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/other-schools/jh-schools.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/other-schools/ne-home.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/other-schools/ne-architecture.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/other-schools/ne-engineering.png",
+                "data-background-size": "contain"
+            }
+        }
+    ],
+    "what-worked.md",
+    [
+        "how-are-we-doing.md",
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/byu-sites-1.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/byu-sites-2.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "https://media.giphy.com/media/9xlTvIeb70qxa/giphy.gif"
+            }
+        },
+        "yikes.md"
+    ],
+    [
+        "we-get-it-show-us-the-goods-already.md",
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "http://i.giphy.com/90F8aUepslB84.gif"
+            }
+        }
+    ],
+    {
+        "filename": "the-theme.md",
+        "attr": {
+            "show-theme-parts": "",
+            "theme-on-top": ""
+        }
+    },
+    {
+        "filename": "mobile.html",
+        "attr": {
+            "hide-header": ""
+        }
+    },
+    {
+        "filename": "key-principles.html",
+        "attr": {
+            "show-theme-parts": ""
+        }
+    },
+    [
+        "navigation.html",
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/byu-menus.png",
+                "data-background-size": "contain"
+            }
+        },
+        {
+            "attr": {
+                "hide-header": "",
+                "data-background-image": "images/admissions-menu.png",
+                "data-background-size": "contain"
+            }
+        }
+    ],
+    "getting-started.md",
+    "but-what-about-the-rest-of-my-page.md",
+    "demo-time.md"
+]
